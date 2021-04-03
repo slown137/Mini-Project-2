@@ -21,14 +21,16 @@
                 <p>Use these three properties</p>
             </div>
             <div class="code-card">
-                <p>.row {</p>
-                <p class="p-indent"> display: flex;</p>
-                <p class="p-indent"> flex-direction: row;</p>
-                <p class="p-indent"> flex-wrap: wrap;</p>
-                <p>}</p>
+                <div class="flexbox-row-code-text">
+                    <p>.row {</p>
+                    <p class="p-indent"> display: flex;</p>
+                    <p class="p-indent"> flex-direction: row;</p>
+                    <p class="p-indent"> flex-wrap: wrap;</p>
+                    <p>}</p>
+                </div>
             </div>
         </div>
-        <div class="card" id="Flexbox-Column">
+        <div class="card" id="flexbox-column">
             <header class="card-header">
                 <h3>Flexbox Column</h3>
             </header>
@@ -36,13 +38,15 @@
                 <p>Use this to create a Flexbox column layout.</p>
             </div>
             <div class="code-card">
-                <p>.column {</p>
-                <p class="p-indent"> display: flex;</p>
-                <p class="p-indent"> flex-direction: column</p>
-                <p>}</p>
+                <div class="flexbox-column-code-text">  
+                    <p>.column {</p>
+                    <p class="p-indent"> display: flex;</p>
+                    <p class="p-indent"> flex-direction: column</p>
+                    <p>}</p>
+                </div>
             </div>
         </div>
-        <div class="card" id="CSS-Grid-Layout">
+        <div class="card" id="css-grid-layout">
             <header class="card-header">
                 <h3>CSS Grid Layout</h3>
             </header>
@@ -50,13 +54,16 @@
                 <p>Build a 12-Column layout using CSS Grid</p>
             </div>
             <div class="code-card">
-                <p>.grid {</p>
-                <p class="p-indent"> display: grid;</p>
-                <p class="p-indent"> width: 100%;</p>
-                <p class="p-indent"> grid-template-columns: repeat(12, 1fr);</p>
+                <div class="grid-code-text">
+                    <p>.grid {</p>
+                    <p class="p-indent"> display: grid;</p>
+                    <p class="p-indent"> width: 100%;</p>
+                    <p class="p-indent"> grid-template-columns: repeat(12, 1fr);</p>
+                    <p>}</p>
+                </div>
             </div>
         </div>
-        <div class="card" id="Linear-Gradients">
+        <div class="card" id="linear-gradients">
             <header class="card-header">
                 <h3>Linear Gradients</h3>
             </header>
@@ -64,12 +71,14 @@
                 <p>This will create a background linear gradient from top to bottom</p>
             </div>
             <div class="code-card">
-                <p>.linear-gradient-background {</p>
-                <p class="p-indent"> background-image: linear-gradient(</p>
-                <p class="p-double-indent">     rgba(232, 102, 236, 0.3) 0%,</p>
-                <p class="p-double-indent">     rgba(232, 102, 236, 0.6) 100%</p>
-                <p class="p-indent"> );</p>
-                <p>}</p>
+                <div class="gradient-code-text">
+                    <p>.linear-gradient-background {</p>
+                    <p class="p-indent"> background-image: linear-gradient(</p>
+                    <p class="p-double-indent">     rgba(232, 102, 236, 0.3) 0%,</p>
+                    <p class="p-double-indent">     rgba(232, 102, 236, 0.6) 100%</p>
+                    <p class="p-indent"> );</p>
+                    <p>}</p>
+                </div>
             </div>
         </div>
         <div class="card" id="Box-Transition-Glow">
@@ -80,16 +89,18 @@
                 <p>Use transition and box shadows to glow on hover.</p>
             </div>
             <div class="code-card">
-                <p>.code-card .card-header {</p>
-                <p class="p-indent"> border-radius: 8px;</p>
-                <p class="p-indent"> transition: all 0.5s ease-in-out;</p>
-                <p>}</p>
-                <p>.code-card:hover,</p>
-                <p>.code-card:hover .card-header {</p>
-                <p> box-shadow: inset 0px 0px 8px</p>
-                <p>rgba(232, 102, 236, 1), 0 0 15px</p>
-                <p>rgba(232, 102, 236, 1);</p>
-                <p>}</p>
+                <div class="box-glow-code-text">
+                    <p>.code-card .card-header {</p>
+                    <p class="p-indent"> border-radius: 8px;</p>
+                    <p class="p-indent"> transition: all 0.5s ease-in-out;</p>
+                    <p>}</p>
+                    <p>.code-card:hover,</p>
+                    <p>.code-card:hover .card-header {</p>
+                    <p> box-shadow: inset 0px 0px 8px</p>
+                    <p>rgba(232, 102, 236, 1), 0 0 15px</p>
+                    <p>rgba(232, 102, 236, 1);</p>
+                    <p>}</p>
+                </div>
             </div>
         </div>
         <div class="card" id="Overlay-Card-with-Title">
@@ -100,10 +111,12 @@
                 <p>Use position and negative margins to raise elements higher than their natural starting point.</p>
             </div>
             <div class="code-card">
-                <p>.card-header {</p>
-                <p> position: relative;</p>
-                <p> margin-top: -20px</p>
-                <p>}</p>
+                <div class="overlay-card-code-text">
+                    <p>.card-header {</p>
+                    <p> position: relative;</p>
+                    <p> margin-top: -20px</p>
+                    <p>}</p>
+                </div>
             </div>
         </div>
     </main>
