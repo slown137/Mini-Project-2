@@ -56,3 +56,7 @@ main {
     color: var(--white);
     margin-left: 10px;
 }
+
+footer {
+    text-align: center;
+}
