@@ -1,0 +1,58 @@
+:root {
+    --purple: rgba(232, 102, 236, 1);
+    --grey: rgba(56, 53, 53, 1);
+    --white: rgba(230, 230, 230, 1);
+}
+
+body {
+    background-color: var(--grey);
+    color: var(--purple);
+}
+
+.main-header {
+    text-align: center;
+}
+
+.main-header h1 {
+    color: var(--purple);
+}
+
+.main-header p {
+    color: var(--white);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-header {
+    position: relative;
+    margin-top: -20px;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    margin: -20px 20px 0px;
+    padding: 0;
+    background-color: var(--grey);
+
+}
+
+.card {
+    flex: 0 0 300px;
+    border: 1px dashed var(--white);
+    margin: 15px;
+}
+
+.code-card{
+    background-image: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%
+    );
+    border-radius: 25px;
+}
+
+.code-card p {
+    color: var(--white);
+    margin-left: 10px;
+}
