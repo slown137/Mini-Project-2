@@ -9,9 +9,107 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <h1>CSS Snippet Cheatsheet</h1>
-        <h3>Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to the page! Select any snippet below and it'll automatically select all of the code for you to copy.</h3>
+        <p>Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to the page! Select any snippet below and it'll automatically select all of the code for you to copy.</p>
     </header>
+    <main>
+        <div class="card" id="flexbox-row">
+            <header class="card-header">
+                <h3>Flexbox Row</h3>
+            </header>
+            <div class="paragraph-box">
+                <p>Use these three properties</p>
+            </div>
+            <div class="code-card">
+                <p>.row {</p>
+                <p class="p-indent"> display: flex;</p>
+                <p class="p-indent"> flex-direction: row;</p>
+                <p class="p-indent"> flex-wrap: wrap;</p>
+                <p>}</p>
+            </div>
+        </div>
+        <div class="card" id="Flexbox-Column">
+            <header class="card-header">
+                <h3>Flexbox Column</h3>
+            </header>
+            <div class="paragraph-box">
+                <p>Use this to create a Flexbox column layout.</p>
+            </div>
+            <div class="code-card">
+                <p>.column {</p>
+                <p class="p-indent"> display: flex;</p>
+                <p class="p-indent"> flex-direction: column</p>
+                <p>}</p>
+            </div>
+        </div>
+        <div class="card" id="CSS-Grid-Layout">
+            <header class="card-header">
+                <h3>CSS Grid Layout</h3>
+            </header>
+            <div class="paragraph-box">
+                <p>Build a 12-Column layout using CSS Grid</p>
+            </div>
+            <div class="code-card">
+                <p>.grid {</p>
+                <p class="p-indent"> display: grid;</p>
+                <p class="p-indent"> width: 100%;</p>
+                <p class="p-indent"> grid-template-columns: repeat(12, 1fr);</p>
+            </div>
+        </div>
+        <div class="card" id="Linear-Gradients">
+            <header class="card-header">
+                <h3>Linear Gradients</h3>
+            </header>
+            <div class="paragraph-box">
+                <p>This will create a background linear gradient from top to bottom</p>
+            </div>
+            <div class="code-card">
+                <p>.linear-gradient-background {</p>
+                <p class="p-indent"> background-image: linear-gradient(</p>
+                <p class="p-double-indent">     rgba(232, 102, 236, 0.3) 0%,</p>
+                <p class="p-double-indent">     rgba(232, 102, 236, 0.6) 100%</p>
+                <p class="p-indent"> );</p>
+                <p>}</p>
+            </div>
+        </div>
+        <div class="card" id="Box-Transition-Glow">
+            <header class="card-header">
+                <h3>Box Transition Glow</h3>
+            </header>
+            <div class="paragraph-box">
+                <p>Use transition and box shadows to glow on hover.</p>
+            </div>
+            <div class="code-card">
+                <p>.code-card .card-header {</p>
+                <p class="p-indent"> border-radius: 8px;</p>
+                <p class="p-indent"> transition: all 0.5s ease-in-out;</p>
+                <p>}</p>
+                <p>.code-card:hover,</p>
+                <p>.code-card:hover .card-header {</p>
+                <p> box-shadow: inset 0px 0px 8px</p>
+                <p>rgba(232, 102, 236, 1), 0 0 15px</p>
+                <p>rgba(232, 102, 236, 1);</p>
+                <p>}</p>
+            </div>
+        </div>
+        <div class="card" id="Overlay-Card-with-Title">
+            <header class="card-header">
+                <h3>Overlay Card with Title</h3>
+            </header>
+            <div class="paragraph-box">
+                <p>Use position and negative margins to raise elements higher than their natural starting point.</p>
+            </div>
+            <div class="code-card">
+                <p>.card-header {</p>
+                <p> position: relative;</p>
+                <p> margin-top: -20px</p>
+                <p>}</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2>Made with &#128151 and CSS</h2>
+    </footer>
 </body>
 </html>
